@@ -12,7 +12,7 @@ driver = webdriver.Chrome()
 url = f"https://open.spotify.com/user/{spotifyId}/followers"
 driver.get(url)
 while True:
-    file = open("log.txt","a",encoding="utf-8")
+    file = open("followers.txt","a",encoding="utf-8")
     followerList = []
     arc = driver.find_elements(By.CLASS_NAME,"Nqa6Cw3RkDMV8QnYreTr")
     sleep(1)
